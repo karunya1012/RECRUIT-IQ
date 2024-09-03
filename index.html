@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recruiting Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Recruiting Platform</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Jobs</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="candidate-portal">
+            <h2>Candidate Portal</h2>
+            <form id="applicationForm">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+                <label for="position">Apply for Position:</label>
+                <input type="text" id="position" name="position" placeholder="Job Title" required>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <section class="recruiter-dashboard" id="recruiterDashboard" style="display:none;">
+            <h2>Recruiter Dashboard</h2>
+            <div id="candidateList"></div>
+            <button onclick="scheduleInterview()">Schedule Interview</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Smart Recruiting Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
